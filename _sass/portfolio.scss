@@ -1,0 +1,31 @@
+@import "portfolio/projects";
+@import "portfolio/gallery";
+@import "portfolio/details";
+@import "portfolio/comment";
+
+.portfolio__wave {
+  padding-top: 40%;
+  grid-area: header;
+  background-image: url('../assets/images/blog-wave.png');
+  background-position: 50% 0;
+  background-size: 133%;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.l-portfolio-top {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 811px) {
+  .l-portfolio-top {
+    margin-top: 180px;
+  }
+}
+
+@media (min-width: 992px) {
+  .l-portfolio {
+    padding: 0 30px;
+  }
+}

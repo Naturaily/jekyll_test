@@ -1,0 +1,46 @@
+.dimonds {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 100px;
+  align-items: end;
+
+  .dimond {
+    margin-bottom: 50px;
+
+    img {
+      display: none;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .dimonds {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 60px;
+
+    .dimond {
+
+      img {
+        display: block;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      p {
+        margin: 40px 0 0 30px;
+        font-weight: 300;
+        max-width: 1000px;
+      }
+
+      &-steam {
+        margin-bottom: 170px;
+      }
+    }
+  }
+}

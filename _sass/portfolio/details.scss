@@ -1,0 +1,306 @@
+.deal-banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+  align-items: center;
+  grid-template-rows: 1fr;
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+  border-radius: 5px;
+  margin-top: 180px;
+
+  .deal-text {
+    padding: 75px 30px 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100% - 135px);
+
+    .banner-logo {
+      width: 160px;
+    }
+
+    p {
+      max-width: 425px;
+    }
+  }
+
+  .deal-image {
+    padding: 20px;
+    text-align: center;
+
+    img {
+      max-height: 420px;
+      margin-top: 30px;
+    }
+  }
+
+  p {
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+
+.deal-step {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 130px;
+
+  .step-text {
+    h2 {
+      margin-left: 32px;
+    }
+
+    .tech-cardsII {
+      margin-top: 50px;
+      margin-left: 30px;
+
+      .card {
+        float: left;
+
+        img {
+          height: 110px;
+        }
+      }
+    }
+  }
+
+  .step-image {
+    text-align: center;
+
+    img {
+      box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-right {
+      margin-top: 50px;
+      height: 405px;
+    }
+
+    .image-left {
+      margin-bottom: 50px;
+      height: 405px;
+    }
+
+    .step-gallery-top {
+
+      .step-gallery-first {
+        margin: 50px 0;
+        width: 390px;
+      }
+
+      .step-gallery-second {
+        width: 390px;
+      }
+    }
+
+    .step-gallery-bottom {
+      .step-gallery-third {
+        width: 390px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+
+  h2 {
+    margin-top: 50px;
+    font-weight: 600;
+  }
+  p {
+    padding: 0 30px;
+    max-width: 350px;
+    margin-top: 46px;
+    font-weight: 200;
+  }
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 53px;
+    margin-left: 30px;
+    width: 320px;
+    margin-bottom: 60px;
+    span {
+      width: 160px;
+      font-weight: 300;
+    }
+
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        font-size: 1.5rem;
+        font-weight: 200;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        background: $color-white;
+        width: 270px;
+        margin-right: 20px;
+        height: 80px;
+        margin-top: 20px;
+        border-bottom: 4px;
+      	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.1);
+        img {
+          max-height: 100%;
+        }
+        span {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-comment {
+  margin-top: 150px;
+
+  .project-comment {
+    margin-top: 115px;
+
+    .comment-opinion p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.portfolio-slide {
+  margin-bottom: 200px;
+
+  .slide-left {
+    a {
+      text-decoration: none;
+      color: $color-global-font;
+      float: left;
+      font-weight: 200;
+      font-size: 0.9rem;
+    }
+  }
+
+  .slide-right {
+    a {
+      text-decoration: none;
+      color: $color-global-font;
+      float: right;
+      font-weight: 200;
+      font-size: 0.9rem;
+    }
+  }
+
+  .project-logo {
+    display: none;
+  }
+
+  .slide-arrow {
+    margin: 0 10px;
+    width: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .deal-banner {
+    grid-template-columns: 1fr 1.4fr;
+    height: 540px;
+    .deal-image {
+      grid-column: 2;
+
+      img {
+        margin: 0;
+      }
+    }
+    .deal-text {
+      padding: 75px 0 60px 75px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  .deal-step {
+    grid-template-columns: 1fr 1fr;
+
+    .step-image {
+
+      .image-right {
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+
+      .image-left {
+        margin-top: 100px;
+      }
+
+      .step-gallery-top {
+        width: 50%;
+        margin-top: 180px;
+
+        .step-gallery-first {
+          width: 250px;
+          float: left;
+          margin-left: -300px;
+          margin-top: 120px;
+        }
+
+        .step-gallery-second {
+          width: 390px;
+          float: left;
+          margin-left: 200px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .step-gallery-bottom {
+        width: 80%;
+
+        .step-gallery-third {
+          width: 550px;
+          margin-left: -40px;
+          margin-top: 0;
+        }
+      }
+    }
+
+    .step-text {
+      p {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  .portfolio-slide {
+    .slide-left, .slide-right {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+
+    .project-logo {
+      display: inline-block;
+      height: 98px;
+    }
+
+    .slide-arrow {
+      width: 50px;
+    }
+  }
+}
+
+@media (max-width: 469px) {
+  .deal-step {
+
+    .step-text {
+
+      .tech-cardsII {
+        margin-left: 0px;
+      }
+    }
+  }
+}
